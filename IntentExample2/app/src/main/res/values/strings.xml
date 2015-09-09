@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IntentExample2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button1_text">One</string>
+    <string name="button2_text">Two</string>
+    <string name="detail_button_text">Detail...woohoo</string>
+
+</resources>
