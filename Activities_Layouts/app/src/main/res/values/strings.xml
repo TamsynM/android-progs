@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Activities_Layouts</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_text">Test</string>
+    <string name="new_text_view">A new text view</string>
+</resources>
