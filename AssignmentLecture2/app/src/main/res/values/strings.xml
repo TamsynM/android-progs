@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AssignmentLecture2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="dob">Date of Birth:</string>
+    <string name="address">Address:</string>
+    <string name="addbtn">Add</string>
+
+</resources>
