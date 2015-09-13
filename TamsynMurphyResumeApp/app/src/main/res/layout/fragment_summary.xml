@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.murphy.tamsyn.tamsynmurphyresumeapp.fragments.SummaryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f9c5c6">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/myFace"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myFace"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:text="@string/full_name"
+                android:textColor="@color/myname"
+                android:textSize="@dimen/textsize_xlarge"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/job_title"
+                android:textColor="@color/myname"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize_large" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_title">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/mybiographybox"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/skills"
+                    android:textSize="@dimen/textsize_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/links"/>
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/table_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_skills"
+                android:background="@color/white_transparent"
+                android:paddingLeft="@dimen/margin_padding_xnormal"
+                android:paddingRight="@dimen/margin_padding_xnormal"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="@string/various_os" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="@string/office" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="@string/xplan" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="@string/basic_c_sharp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="@string/basic_my_sql" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="@string/basic_php" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="@string/android" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="@string/training" />
+                </TableRow>
+
+            </TableLayout>
+
+            <View
+                android:id="@+id/line_view_hobbies"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/table_skill"
+                android:layout_margin="@dimen/margin_padding_tiny"
+                android:background="@color/mybiographybox" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_view_hobbies">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_transparent"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/word_hobbies"
+                    android:textSize="@dimen/textsize_medium"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_padding_small"
+                android:layout_below="@+id/linear_layout_hobbies"
+                android:background="@color/white_transparent"
+                android:text="@string/hobbies" />
+
+            <View
+                android:id="@+id/line_view_summary"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/hobbies"
+                android:layout_margin="@dimen/margin_padding_tiny"
+                android:background="@color/mybiographybox" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_view_summary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_transparent"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/word_summary"
+                    android:textSize="@dimen/textsize_medium"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_summary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_padding_small"
+                android:layout_below="@+id/linear_layout_summary"
+                android:background="@color/white_transparent"
+                android:text="@string/summary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_me_link"
+                android:layout_below="@+id/text_view_summary_text"
+                android:text="@string/about_me"
+                android:background="@color/white_transparent"
+                android:autoLink="web" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/github_link"
+                android:layout_below="@+id/about_me_link"
+                android:text="@string/github"
+                android:background="@color/white_transparent"
+                android:autoLink="web"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TamsynMurphyResumeApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="word_summary">Summary</string>
+    <string name="word_hobbies">Hobbies</string>
+    <string name="hobbies">Cosplay
+        \n\nPlaying Computer/Console Games
+        \n\nWatching Movies and Series
+        \n\nListening to Music</string>
+    <string name="my_face">Tamsyn Face Image</string>
+    <string name="full_name">Tamsyn Melanie Murphy</string>
+    <string name="job_title">Graduate Software Developer</string>
+    <string name="skills">Summary of Skills</string>
+    <string name="basic_c_sharp">Basic C#</string>
+    <string name="basic_php">Basic PHP</string>
+    <string name="basic_my_sql">Basic MySQL</string>
+    <string name="various_os">Various Operating Systems</string>
+    <string name="xplan">Xplan Online CRM Package</string>
+    <string name="office">Microsoft Office</string>
+    <string name="training">Training of Staff</string>
+    <string name="android">Basic Android</string>
+    <string name="summary">I have gained experience with dealing with customers, admin-related tasks and staff training in my various roles in the past. I have many different certificates as I always strive to learn new things which will help me progress in my career. My most recent achievement is completing my BSc in Computer Systems which I decided to study as I really enjoyed working with the xPlan system as well working with the development team at iRess to troubleshoot and improve the system.
+        \n\nI am good listener, trustworthy, reliable, dedicated, punctual, patient, work well in a team and am willing to learn new things. I am also a quick learner and I always strive to give everything I have to the tasks at hand.
+        \n\nIn my spare time I enjoying going online and going through tutorials or doing free online courses in order to expand my programming knowledge and to gain as much experience as I can to build on my skills.
+        \n\nMy goal in life is to become a great Software Developer working for a great development company and learning from other great developers to continually improve my skills.
+        \n\nYou can look at my personal projects on my GitHub account and my about.me page on the links below</string>
+    <string name="about_me">https://about.me/TamsynMurphy</string>
+    <string name="github">https://github.com/TamsynM</string>
+    
+
+
+
+</resources>
