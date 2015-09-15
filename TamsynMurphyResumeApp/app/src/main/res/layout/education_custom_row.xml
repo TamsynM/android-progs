@@ -7,34 +7,34 @@
 
         <TextView
             android:id="@+id/college_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/mybiographytext"
-            android:padding="@dimen/margin_padding_small"
-            android:textStyle="bold"/>
+            android:textColor="@color/mybiographybox"
+            android:padding="@dimen/margin_padding_xtiny"
+            android:gravity="center_horizontal"
+            android:fontFamily="impact"
+            android:textStyle="bold"
+            android:background="@color/mybackground"/>
 
         <TextView
             android:id="@+id/degree_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_padding_small"
-            android:textColor="@color/mybiographytext"
-            android:textStyle="bold" />
+            android:textColor="@color/mybiographybox" />
 
         <TextView
             android:id="@+id/college_subjects"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/mybiographytext"
-            android:padding="@dimen/margin_padding_small"
-            android:textStyle="bold"/>
+            android:textColor="@color/mybiographybox"
+            android:padding="@dimen/margin_padding_small" />
 
         <TextView
             android:id="@+id/graduation_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_padding_small"
-            android:textColor="@color/mybiographytext"
-            android:textStyle="bold"/>
+            android:textColor="@color/mybiographybox" />
 
 </LinearLayout>

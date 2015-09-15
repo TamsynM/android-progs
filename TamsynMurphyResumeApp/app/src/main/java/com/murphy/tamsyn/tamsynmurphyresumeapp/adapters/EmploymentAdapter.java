@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.murphy.tamsyn.tamsynmurphyresumeapp.R;
@@ -21,12 +22,13 @@ public class EmploymentAdapter extends ArrayAdapter<Employment> {
 
     private List<Employment> myCompanies;
     private Context myContext;
+    LayoutInflater myInflater;
 
     public EmploymentAdapter(Context context, List<Employment> employment) {
         super(context, R.layout.employment_custom_row, employment);
 
-        myCompanies = employment;
-        myContext = context;
+        this.myCompanies = employment;
+        this.myContext = context;
     }
 
     @Override
@@ -47,28 +49,34 @@ public class EmploymentAdapter extends ArrayAdapter<Employment> {
         final Employment selectedCompany = getItem(position);
 
         if (view == null){
-            view = LayoutInflater.from(getContext()).inflate(R.layout.employment_custom_row, null);
 
             viewHolder = new Holder();
-            viewHolder.myEmployer = (TextView)view.findViewById(R.id.employer_name);
+            LayoutInflater inflater = (LayoutInflater)  myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            view = (LinearLayout) inflater.inflate(R.layout.employment_custom_row, null);
+
             viewHolder.myPosition = (TextView)view.findViewById(R.id.employment_position);
+            viewHolder.myEmployer = (TextView)view.findViewById(R.id.employer_name);
             viewHolder.myDuties = (TextView)view.findViewById(R.id.employment__duties);
             viewHolder.myDuration = (TextView)view.findViewById(R.id.employment_duration);
 
-            viewHolder.myEmployer.setText(selectedCompany.getWorkName());
-            viewHolder.myPosition.setText(selectedCompany.getPositionName());
-            viewHolder.myDuties.setText(selectedCompany.getWorkDuties());
-            viewHolder.myDuration.setText(selectedCompany.getDurationEmployed());
+            view.setTag(viewHolder);
+
         }else {
             viewHolder = (Holder)view.getTag();
         }
+
+        viewHolder.myPosition.setText(selectedCompany.getPositionName());
+        viewHolder.myEmployer.setText(selectedCompany.getWorkName());
+        viewHolder.myDuties.setText(selectedCompany.getWorkDuties());
+        viewHolder.myDuration.setText(selectedCompany.getDurationEmployed());
 
         return view;
     }
 
     private class Holder{
-        TextView myEmployer;
         TextView myPosition;
+        TextView myEmployer;
         TextView myDuties;
         TextView myDuration;
 

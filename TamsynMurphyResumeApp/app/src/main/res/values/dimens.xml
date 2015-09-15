@@ -4,6 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!-- SP adjusts according the users setting, DP is static -->
+    <dimen name="textsize_xxlarge">30dp</dimen>
     <dimen name="textsize_xlarge">28dp</dimen>
     <dimen name="textsize_large">24dp</dimen>
     <dimen name="textsize_medium_large">20dp</dimen>
@@ -15,6 +16,8 @@
 
 
     <!-- Margin & padding -->
+    <dimen name="margin_padding_xxs">1dp</dimen>
+    <dimen name="margin_padding_extra_tiny">2dp</dimen>
     <dimen name="margin_padding_tiny">4dp</dimen>
     <dimen name="margin_padding_xtiny">6dp</dimen>
     <dimen name="margin_padding_small">9dp</dimen>

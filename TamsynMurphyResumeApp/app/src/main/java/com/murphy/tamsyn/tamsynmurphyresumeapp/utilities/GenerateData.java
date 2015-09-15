@@ -19,7 +19,6 @@ public class GenerateData {
         Education HWU = new Education();
         HWU.setCollegeName("Heriot-Watt University");
         HWU.setDegreeName("BSc in Computer Systems");
-        HWU.setGraduationYear("2015");
         HWU.setSubjects("Software Engineering\n" +
                 "Operations Management\n" +
                 "Computer Graphics\n" +
@@ -27,6 +26,7 @@ public class GenerateData {
                 "Interaction Design\n" +
                 "Knowledge Management\n" +
                 "Professional Development");
+        HWU.setGraduationYear("2015");
         colleges.add(HWU);
 
         Education CTI = new Education();
@@ -51,24 +51,28 @@ public class GenerateData {
         Education NH1 = new Education();
         NH1.setCollegeName("New Horizons Computer Learning Centre");
         NH1.setDegreeName("Pastel Partner 2007");
+        NH1.setSubjects("");
         NH1.setGraduationYear("2008");
         colleges.add(NH1);
 
         Education NH2 = new Education();
         NH2.setCollegeName("New Horizons Computer Learning Centre");
         NH2.setDegreeName("Adobe Photoshop Level 1");
+        NH2.setSubjects("");
         NH2.setGraduationYear("2008");
         colleges.add(NH2);
 
         Education VC1 = new Education();
         VC1.setCollegeName("Varsity College");
         VC1.setDegreeName("Pastel Accounting");
+        VC1.setSubjects("");
         VC1.setGraduationYear("2007");
         colleges.add(VC1);
 
         Education VC2 = new Education();
         VC2.setCollegeName("Varsity College");
         VC2.setDegreeName("Financial Accounting");
+        VC2.setSubjects("");
         VC2.setGraduationYear("2007");
         colleges.add(VC2);
 
@@ -93,7 +97,8 @@ public class GenerateData {
     }
 
     public static List<Employment> getListOfCompanies(){
-        List<Employment> companies = new ArrayList<>();
+
+        List<Employment> companies = new ArrayList<Employment>();
 
         Employment WPW1 = new Employment();
         WPW1.setWorkName("Warwick Private Wealth");

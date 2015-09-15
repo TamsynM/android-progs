@@ -3,39 +3,38 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:descendantFocusability="blocksDescendants"
-    android:background="@color/mybiographybox">
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/employment_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mybiographybox"
+        android:fontFamily="impact"
+        android:textStyle="bold"
+        android:padding="@dimen/margin_padding_xtiny"
+        android:gravity="center_horizontal"
+        android:background="@color/mybackground"/>
 
         <TextView
             android:id="@+id/employer_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/mybiographytext"
             android:padding="@dimen/margin_padding_small"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/employment_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/margin_padding_small"
-            android:textColor="@color/mybiographytext"
-            android:textStyle="bold" />
+            android:textColor="@color/mybiographybox" />
 
         <TextView
             android:id="@+id/employment__duties"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/mybiographytext"
-            android:padding="@dimen/margin_padding_small"
-            android:textStyle="bold"/>
+            android:textColor="@color/mybiographybox"
+            android:padding="@dimen/margin_padding_small" />
 
         <TextView
             android:id="@+id/employment_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_padding_small"
-            android:textColor="@color/mybiographytext"
-            android:textStyle="bold"/>
+            android:textColor="@color/mybiographybox"/>
 
 </LinearLayout>

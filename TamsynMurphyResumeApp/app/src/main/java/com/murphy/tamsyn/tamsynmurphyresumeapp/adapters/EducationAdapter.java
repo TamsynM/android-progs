@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.murphy.tamsyn.tamsynmurphyresumeapp.R;
@@ -20,12 +21,17 @@ public class EducationAdapter extends ArrayAdapter<Education> {
 
     private List<Education> myEducation;
     private Context myContext;
+    LayoutInflater myInflater;
 
     public EducationAdapter(Context context, List<Education> colleges) {
         super(context, R.layout.education_custom_row, colleges);
 
-        myEducation = colleges;
-        myContext = context;
+        this.myContext = context;
+        //myEducation = colleges;
+        //myContext = context;
+        this.myEducation = colleges;
+
+        //myInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public Education getItem(int position) {
@@ -37,37 +43,41 @@ public class EducationAdapter extends ArrayAdapter<Education> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        //return super.getView(position, convertView, parent);
+
         View view = convertView;
         Holder viewHolder;
 
         final Education selectedCollege = getItem(position);
 
         if (view == null) {
-            view = LayoutInflater.from(getContext()).inflate(R.layout.education_custom_row, null);
-
             viewHolder = new Holder();
+            LayoutInflater inflater = (LayoutInflater)  myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            view = (LinearLayout) inflater.inflate(R.layout.education_custom_row, null);
+
             viewHolder.myCollegeName = (TextView)view.findViewById(R.id.college_name);
-            viewHolder.myGraduationYear = (TextView)view.findViewById(R.id.graduation_year);
             viewHolder.myDegreeName = (TextView)view.findViewById(R.id.degree_name);
             viewHolder.mySubjects = (TextView)view.findViewById(R.id.college_subjects);
+            viewHolder.myGraduationYear = (TextView)view.findViewById(R.id.graduation_year);
 
-            viewHolder.myCollegeName.setText(selectedCollege.getCollegeName());
-            viewHolder.myDegreeName.setText(selectedCollege.getDegreeName());
-            viewHolder.myGraduationYear.setText(selectedCollege.getGraduationYear());
-            viewHolder.mySubjects.setText(selectedCollege.getSubjects());
+            view.setTag(viewHolder);
         }
         else {
             viewHolder = (Holder)view.getTag();
         }
+        viewHolder.myCollegeName.setText(selectedCollege.getCollegeName());
+        viewHolder.myDegreeName.setText(selectedCollege.getDegreeName());
+        viewHolder.mySubjects.setText(selectedCollege.getSubjects());
+        viewHolder.myGraduationYear.setText(selectedCollege.getGraduationYear());
 
+        view.setTag(viewHolder);
         return view;
     }
 
     private class Holder{
         TextView myCollegeName;
-        TextView myGraduationYear;
         TextView myDegreeName;
         TextView mySubjects;
+        TextView myGraduationYear;
     }
 }

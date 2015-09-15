@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TamsynMurphyResumeApp</string>
+    <string name="app_name">Tamsyn CV</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -9,11 +9,11 @@
     <string name="word_summary">Summary</string>
     <string name="word_hobbies">Hobbies</string>
     <string name="hobbies">Cosplay
-        \n\nPlaying Computer/Console Games
-        \n\nWatching Movies and Series
-        \n\nListening to Music</string>
+        \nPlaying Computer/Console Games
+        \nWatching Movies and Series
+        \nListening to Music</string>
     <string name="my_face">Tamsyn Face Image</string>
-    <string name="full_name">Tamsyn Melanie Murphy</string>
+    <string name="full_name">Tamsyn Murphy</string>
     <string name="job_title">Graduate Software Developer</string>
     <string name="skills">Summary of Skills</string>
     <string name="basic_c_sharp">Basic C#</string>
@@ -32,7 +32,10 @@
     <string name="about_me">https://about.me/TamsynMurphy</string>
     <string name="github">https://github.com/TamsynM</string>
     
-
+    <string name="sendemail">Send Email</string>
+    <string name="phone">Phone Me</string>
+    <string name="twitter">Follow me on Twitter</string>
+    <string name="linkedin">Look at my on LinkedIn Page</string>
 
 
 </resources>
