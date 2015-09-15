@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "NfcIntent!", Toast.LENGTH_SHORT).show();
 
             Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+
             NdefMessage ndefMessage = createNdefMessage("My string content!");
 
             writeNdefMessage(tag, ndefMessage);
